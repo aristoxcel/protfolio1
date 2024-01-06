@@ -1,0 +1,347 @@
+/* Common shared code */
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,700&display=swap');
+
+*{
+    padding:0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+    --orange:#FD6E0A;
+    --ass:#474747;
+    --dark:#181818;
+    --gray:#757575;
+    --bg:#FFF8F3;
+    --white:#fff;
+}
+
+.heading2{
+    text-align: center;
+    color: var(--dark, #181818);
+    font-size: 35px;
+    font-weight: 700;
+}
+
+/* Header code */
+header{
+    width: 100svw;
+    height: 837px;
+    background-color: var(--bg);
+    background-image: url('images/header_bg.png'), url('images/developer.png');
+    background-repeat: no-repeat;
+    background-position: bottom right, top left;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 200px 14px 280px;
+    width: 70%;
+}
+
+nav h2{
+    color: var(--dark, #181818);
+    font-size: 45px;
+    font-weight: 800;
+    padding-top: 50px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    list-style: none;
+    padding: 15px 10px;
+    margin-top: 40px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: var(--ass, #474747);
+    font-size: 20px;
+}
+
+#anch1, #anch2{
+    padding-top: 30px;
+}
+
+nav li .btn__orange{
+    background-color:var(--orange);
+    border: 0;
+    border-radius: 5px;
+    color: var(--white, #FFF);
+    font-size: 20px;
+    font-weight: 700;
+    padding: 18px 35px;
+}
+
+span{
+    color:var(--orange);
+}
+
+.head__container{
+    display: flex;
+    justify-content: space-between;
+    padding-left:  15%;
+    padding-right:  3%;
+}
+
+.my-self{
+    min-width: 500px;
+    max-width: 500px;
+    margin-top: 70px;
+}
+.my-self h2{
+    color: var(--ass, #474747);
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.my-self h1{
+    color: var(--dark);
+    font-size: 85px;
+    font-weight: 700;
+}
+
+.my-self p{
+    color: var(--gray, #757575);
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.btn{
+    margin-top: 20px;
+    
+}
+
+.btn1 {
+    background-color:var(--orange);
+    border: 0;
+    border-radius: 5px;
+    color: var(--white, #FFF);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px;
+    margin-right: 15px;
+}
+.btn2 {
+    border: 1px solid var(--orange);
+    border-radius: 5px;
+    color: var(--orange, );
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+/* About me section */
+.about__me{
+    box-sizing: border-box;
+    background-color: var(--bg);
+    margin:100px auto;
+    max-width: 1140px;
+    min-width: 650px;
+    min-height: 540px;
+    padding: 130px 156px;
+    text-align: center;
+}
+
+.about__me p{
+    color: var(--gray, #757575);
+    font-size: 18px;
+    text-align: justify;
+    margin: 30px 0px;
+}
+
+#about__pera{
+    min-width: 400px;
+}
+.card{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about__me__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about__me__info p{
+    font-size: 20px;
+    margin: 2px;
+}
+
+.about__me__info h4{
+    font-size: 20px;
+    color: var(--dark);
+}
+
+/* what i do section */
+#i__do__section{
+    box-sizing: border-box;
+    margin:100px auto;
+    max-width: 1140px;
+    min-width: 650px;
+    min-height: 540px;
+}
+
+#inside__pera{
+        color: var(--gray, #757575);
+        font-size: 18px;
+        text-align: justify;
+        margin: 30px 0px;
+}
+
+.card__div{
+    box-sizing: border-box;
+    width: 260px;
+    height: 300px;
+    flex-shrink: 0;
+    box-shadow: 0px 0px 10px var(--gray);
+    padding:15px;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+
+.card__div>h4{
+    padding:20px 0px;
+}
+
+
+/* resume section */
+#resume__section{
+    box-sizing: border-box;
+    margin:80px auto;
+    max-width: 1140px;
+    min-width: 650px;
+    min-height: 540px;
+}
+
+#resume__section>h2{
+    margin-bottom: 70px;
+}
+.my__edu__expo{
+    display: flex;
+    gap:40px;
+}
+
+.my__edu>h2, .my__expo>h2{
+    color: var(--ass, #474747);
+    font-size: 30px;
+    font-weight: 700;
+}
+.inside__div__my_edu h4{
+    color: var(--ass, #474747);
+    font-size: 25px;
+    font-weight: 700;
+    padding: 5px 0;
+}
+
+.inside__div__my_edu h5{
+    color: var(--gray, #757575);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.resume__pera{
+    color: var(--gray, #757575);
+    padding: 20px 0px;
+    text-align: justify;
+}
+
+.resume_btn{
+    margin: 30px auto;
+    display: flex;
+}
+
+/* footer  */
+footer{
+    box-sizing: border-box;
+    min-height: 540px;
+    background-color: var(--bg);
+    padding: 40px;
+}
+
+.footer__div{
+    display: flex;
+    gap: 30px;
+    max-width: 1140px;
+    min-width: 650px;
+    margin: 0 auto;
+}
+
+.child__footer{
+    max-width: 50%;
+}
+
+.second__child{
+    width: 100%;
+}
+
+.child__footer h3{
+    padding: 20px 0;
+    color: var(--dark, #181818);
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.child__footer>p{
+    color: var(--ass);
+}
+
+.social__div a{
+    padding-right:15px ;
+}
+
+.social__div img{
+    margin-top: 20px;
+}
+form{
+    display: grid;
+    grid-row:20px ;
+    row-gap: 20px;
+}
+
+form input[type="text"], form input[type="email"]{
+    height: 40px;
+    border: 0;
+}
+
+textarea{
+    border: 0;
+}
+
+form input[type="submit"]{
+    width:30%
+}
+
+
+@media screen and (max-width: 700px) {
+    header{
+        height: auto;
+    }
+    nav{
+        display: flex;
+        padding: 14px 20px 14px 50px;
+        width: 70%;
+    }
+
+    #title  {
+        color: var(--ass, #474747);
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    #title__name{
+        font-size: 45px;
+        font-weight: 700;
+    }
+    .head__container {
+        display: flex;
+        flex-direction: column;
+    }
+  }
